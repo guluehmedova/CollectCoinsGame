@@ -1,8 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
-
 public class PlayerController : MonoBehaviour
 {
     CharacterController charchterController;
@@ -15,8 +13,6 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField]
     GameObject obj;
-
-    [SerializeField] Text coinsText;
 
     public static int numberOfCoins;
     

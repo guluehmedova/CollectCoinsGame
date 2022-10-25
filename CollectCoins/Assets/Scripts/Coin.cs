@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Coin : MonoBehaviour
 {
+    public AudioSource CoinAudiosource;
     void Start()
     {
         
@@ -19,6 +20,7 @@ public class Coin : MonoBehaviour
         if (other.gameObject.tag == "Player")
         {
             PlayerController.numberOfCoins += 1;
+            CoinAudiosource.Play();
             gameObject.SetActive(false);
         }
     }
